@@ -1,3 +1,215 @@
+<script setup>
+import { siteText } from "@/constants/index";
+</script>
+
 <template>
-    Site
+    <section id="site">
+        <div class="site__inner">
+            <div class="site__title">
+                Site Coding <em>나의 작업물</em>
+            </div>
+            <div class="site__wrap">
+                <div v-for="(site, key) in siteText" :key="key" :class="'site__item s' + (key + 1)">
+                    <span class=" num">{{ key + 1 }}.</span>
+                    <div class="text">
+                        <div>{{ site.text[0] }}</div>
+                        <div>{{ site.text[1] }}</div>
+                        <div>{{ site.text[2] }}</div>
+                    </div>
+                    <h3 class="title">
+                        {{ site.title }}
+                    </h3>
+                    <div class="btn">
+                        <a :href="site.code">code</a>
+                        <a :href="site.view">view</a>
+                    </div>
+                    <div class="info">
+                        <span>{{ site.info[0] }}</span>
+                        <span>{{ site.info[1] }}</span>
+                        <span>{{ site.info[2] }}</span>
+                        <span>{{ site.info[3] }}</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </template>
+
+<style lang="scss">
+.site__inner {
+    padding: 16px;
+}
+
+.site__title {
+    position: sticky;
+    left: 0;
+    top: 70px;
+    height: 5vw;
+    background-color: var(--mainBg-color);
+    width: 100%;
+    height: 7vw;
+    font-size: 5vw;
+    font-weight: 900;
+    line-height: 1.6;
+    text-transform: uppercase;
+    font-family: var(--mainTit-font);
+    border-bottom: 0.4vw solid var(--subBg400);
+    color: var(--subBg400);
+    margin-bottom: 4vh;
+}
+
+.site__title em {
+    font-family: var(--mainKor-font);
+    font-size: 1.25rem;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: 4px;
+}
+
+.site__item {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 3vw;
+    background-color: var(--subcolor100);
+    position: sticky;
+    left: 0;
+}
+
+.site__item .num {
+    position: absolute;
+    left: 2vw;
+    top: 4vw;
+    display: inline;
+    font-size: 5vw;
+    font-weight: 900;
+    font-family: var(--mainNum-font);
+    color: var(--subcolor2_500);
+}
+
+.site__item .text {
+    font-size: 3vw;
+    line-height: 1.2;
+    font-weight: bold;
+    color: var(--subcolor2_500);
+    font-family: var(--mainTit-font);
+    margin-bottom: 3vw;
+}
+
+.site__item .title {
+    font-size: 2vw;
+    font-weight: bold;
+    font-family: var(--mainKor-font);
+    color: var(--subcolor2_400);
+    margin-bottom: 2vw;
+}
+
+.site__item .btn {
+    margin-bottom: 1vw;
+}
+
+.site__item .btn a {
+    font-size: 1.5vw;
+    font-family: var(--mainNum-font);
+    color: var(--subcolor2_400);
+    margin-bottom: 1vw;
+    padding: 5px 20px;
+    transition: all 0.3s;
+}
+
+.site__item .btn a:hover {
+    color: var(--subcolor2_600);
+    font-size: 1.7vw;
+}
+
+.site__item .info {
+    width: 98%;
+    font-size: 1.3vw;
+    color: var(--subcolor2_400);
+}
+
+.site__item.s1 {
+    background-color: var(--subcolor200);
+    top: 180px;
+}
+
+.site__item.s2 {
+    background-color: var(--subcolor300);
+    top: 200px;
+}
+
+.site__item.s3 {
+    background-color: var(--subcolor400);
+    top: 220px;
+}
+
+.site__item.s4 {
+    background-color: var(--subcolor500);
+    top: 240px;
+}
+
+@media (max-width: 800px) {
+    .site__title {
+        width: 100%;
+        margin-bottom: 10vw;
+        font-size: 30px;
+        height: auto;
+        top: 68px;
+        z-index: 1000;
+        background-color: var(--mainBg-color);
+    }
+
+    .site__item.s1 {
+        top: 140px;
+    }
+
+    .site__item.s2 {
+        top: 160px;
+    }
+
+    .site__item.s3 {
+        top: 180px;
+    }
+
+    .site__item.s4 {
+        top: 200px;
+    }
+
+    .site__item .num {
+        font-size: 80px;
+        left: 20px;
+        top: 20px;
+    }
+
+    .site__item .text>div {
+        font-size: 6vw;
+    }
+
+    .site__item .title {
+        font-size: 3vw;
+    }
+
+    .site__item .btn a {
+        font-size: 3vw;
+    }
+
+    .site__item .btn a:hover {
+        font-size: 3.5vw;
+    }
+
+    .site__item .info {
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        padding: 5px 0;
+        font-size: 1.8vw;
+        margin-left: 1.2vw;
+    }
+}
+</style>
