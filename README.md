@@ -11,25 +11,30 @@ Vue.js는 다른 프레임워크나 라이브러리와 쉽게 통합되며, 점�
 ## 셋팅
 1. `npm init vue@latest`
 2. 설정 내용
-Vue.js - The Progressive JavaScript Framework
+Vue.js - The Progressive JavaScript Framework<br/><br/>
 
-√ Project name: ... vue-project
-√ Add TypeScript? ... <span style="color: blue">No</span> / Yes
-√ Add JSX Support? ... No / <span style="color: blue">Yes</span>
-√ Add Vue Router for Single Page Application development? ... No / <span style="color: blue">Yes</span>
-√ Add Pinia for state management? ... <span style="color: blue">No</span> / Yes
-√ Add ESLint for code quality? ... No / <span style="color: blue">Yes</span>
-√ Add Prettier for code formatting? ... No / <span style="color: blue">Yes</span>
+√ Project name: ... vue-project<br/>
+√ Add TypeScript? ... <span style="color.#0000FF">No</span> / Yes<br/>
+√ Add JSX Support? ... No / <span style="color.#0000FF">Yes</span><br/>
+√ Add Vue Router for Single Page Application development? ... No / <span style="color.#0000FF">Yes</span><br/>
+√ Add Pinia for state management? ... <span style="color.#0000FF">No</span> / Yes<br/>
+√ Add ESLint for code quality? ... No / <span style="color.#0000FF">Yes</span><br/>
+√ Add Prettier for code formatting? ... No / <span style="color.#0000FF">Yes</span><br/><br/>
 
-Scaffolding project in C:\Users\line\Desktop\WEBS0106\vue-project...
+Scaffolding project in C:\Users\line\Desktop\WEBS0106\vue-project...<br/><br/>
 
-Done. Now run:
+Done. Now run:<br/><br/>
 
-  npm install
-  npm run format
-  npm run dev
+  npm install<br/>
+  npm run format<br/>
+  npm run dev<br/>
 
 3. 해당 폴더로 이동 `cd vue-project`
 4. npm 설치 `npm install`
 5. npm format `npm run format`
 6. 실행하기 `npm run dev`
+
+## 설치
+1. gsap 설치 : `npm install gsap`
+2. sass 설치 : `npm install sass`
+3. lenis 설치 : `npm install @studio-freight/lenis`
