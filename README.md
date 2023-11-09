@@ -8,6 +8,9 @@ Vue.js는 현대적인 웹 애플리케이션을 만들기 위한 JavaScript 프
 
 Vue.js는 다른 프레임워크나 라이브러리와 쉽게 통합되며, 점진적으로 프로젝트에 도입하기에도 좋아요. 또한 문서가 잘 정리되어 있어 학습이 비교적 쉬운 편입니다.
 
+## 미리보기
+미리보기 : https://vue-project-37coxqk3r-lee-jiyoungs-projects.vercel.app/
+
 ## 셋팅
 1. `npm init vue@latest`
 2. 설정 내용
@@ -38,3 +41,13 @@ Done. Now run:<br/><br/>
 1. gsap 설치 : `npm install gsap`
 2. sass 설치 : `npm install sass`
 3. lenis 설치 : `npm install @studio-freight/lenis`
+
+## 구현기능
+1. 구글 폰트 적용
+2. smooth 효과 적용 https://lenis.studiofreight.com/
+3. 자바스크립트 메뉴 클릭 이동 효과 적용
+4. GSAP를 이용한 가로 효과
+5. JavaScript 모듈 기능 적용
+6. 웹표준 준수를 위한 스킵 메뉴 및 aria, role 적용
+7. react 빌드 작업 npm run build
+8. vercel 배포 작업
