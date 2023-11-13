@@ -17,12 +17,12 @@ Vue.js는 다른 프레임워크나 라이브러리와 쉽게 통합되며, 점�
 Vue.js - The Progressive JavaScript Framework<br/><br/>
 
 √ Project name: ... vue-project<br/>
-√ Add TypeScript? ... <span style="color:blue">No</span> / Yes<br/>
-√ Add JSX Support? ... No / <span style="color:blue">Yes</span><br/>
-√ Add Vue Router for Single Page Application development? ... No / <span style="color:blue">Yes</span><br/>
-√ Add Pinia for state management? ... <span style="color:blue">No</span> / Yes<br/>
-√ Add ESLint for code quality? ... No / <span style="color:blue">Yes</span><br/>
-√ Add Prettier for code formatting? ... No / <span style="color:blue">Yes</span><br/><br/>
+√ Add TypeScript? ... <span style="color:blue">"No"</span> / Yes<br/>
+√ Add JSX Support? ... No / <span style="color:blue">"Yes"</span><br/>
+√ Add Vue Router for Single Page Application development? ... No / <span style="color:blue">"Yes"</span><br/>
+√ Add Pinia for state management? ... <span style="color:blue">"No"</span> / Yes<br/>
+√ Add ESLint for code quality? ... No / <span style="color:blue">"Yes"</span><br/>
+√ Add Prettier for code formatting? ... No / <span style="color:blue">"Yes"</span><br/><br/>
 
 Scaffolding project in C:\Users\line\Desktop\WEBS0106\vue-project...<br/><br/>
 
